@@ -1,0 +1,39 @@
+run_number: 4
+
+click_data: grouped_week
+trans_data: grouped_week
+
+click_params:
+    cat_id: True
+    level_0: False
+    level_1: False
+    level_2: False
+    filter_count: 50
+    normed: True
+
+trans_params:
+    counts: True
+    sums: False
+    sign: combined
+    filter_count: 50
+    normed: True
+    convert_currency: False
+
+click_time_features: ['90min']
+trans_time_features: ['90min']
+
+train_params:
+    sample_size: 70
+    validation: False
+    resample_freq: 1000
+    random_state: 42
+    thread_count: 20
+    verbose: 500
+
+catboost_params:
+    iterations: 15000
+    learning_rate: 0.03
+    depth: 8
+    l2_leaf_reg: 0.77
+    random_seed: 42
+    use_best_model: False

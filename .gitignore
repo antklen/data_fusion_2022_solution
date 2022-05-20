@@ -1,0 +1,6 @@
+*.csv
+*.pkl
+*.cbm
+.DS_Store
+__pycache__
+outputs
